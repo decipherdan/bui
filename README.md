@@ -1,19 +1,20 @@
 #BUI - Beacon User Interface
 
-To add BUI styles to bootstrap, just link to the bui-styles.css file in bui-css. The style overrides have been built using bootstrap 3.2.0.
-
-BUI is built to be modular. An application can load regular bootstrap, then when ready, adding override classes will activate the bui style overrides. You can add these override classes to the ```<html>``` tag or localize them to a specific ```<div>```.
-
+To add BUI styles to your application, just link to the bui-styles.css file in. The BUI style overrides have been built on top of bootstrap 3.2.0. Bootstrap is already included in the bui-styles.css file so there is no need to include it seperatly.
 
 ## Demo
  
-[http://decipher-design.com/bui/]()
+[http://decipherinc.github.io/bui]()
 
-## Currently Available Overrides
+## Pre-requsits
 
-```sh
-bui-grid bui-typography bui-icons bui-buttons bui-modals
-```
+1. You'll need [Node.js](http://nodejs.org) installed, so [download and install it](http://nodejs.org/download/).
+
+2. If you do not have [Bower](http://bower.io/) installed, install it via `npm`:
+
+    ```sh
+    npm install -g bower
+    ```
 
 ## Installation
 
@@ -23,13 +24,11 @@ bui-grid bui-typography bui-icons bui-buttons bui-modals
     bower install bui
     ```
 
-2. If you do not have [Bower](http://bower.io/) installed, install it via `npm`:
-
-    ```sh
-    npm install -g bower
+2. Add to your application:
+    ```
+    <link rel="stylesheet" href="bower_compenents/bui/dist/bui-styles.min.css">
     ```
 
-3. If that didn't work, you probably don't have [Node.js](http://nodejs.org) installed, so [download and install it](http://nodejs.org/download/), then repeat step #2, then repeat step #1.  Fun!
 
 ### Development Installation (for Non-[FocusVision](http://www.focusvision.com) Employees)
 
@@ -57,10 +56,6 @@ bui-grid bui-typography bui-icons bui-buttons bui-modals
     $ grunt watch:main
     ```
 
-### Development Installation (for FocusVision Employees)
-
-Ask [Christopher Hiller](https://github.com/boneskull) or [Dick DeLeon](https://github.com/dickdeleon) where to clone from, then follow above steps #2-onward.
-
 ## Notes
 
 TDB
@@ -76,3 +71,4 @@ MIT
 ## Author
 
 [Dick DeLeon](https://github.com/dickdeleon)
+[Dan Mendoza](https://github.com/decipherdan)

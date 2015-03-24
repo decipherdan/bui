@@ -122,7 +122,7 @@ module.exports = function (grunt) {
     grunt.task.run('bump-commit');
   });
 
-  grunt.registerTask('default', 'Compile LESS', ['build']);
+  grunt.registerTask('default', 'Compile LESS', ['build', 'demo']);
   grunt.registerTask('demo', 'Build demo', [
     'build',
     'less:demo',

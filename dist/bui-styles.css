@@ -1,5 +1,8 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700);
 /*! bui - v1.3.1 - 2015-03-24 - (c) 2014-2015 FocusVision Worldwide - Licensed MIT */
+/**
+ * Import Twitter Bootsrap 3.2.0 with all child elements
+ */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6174,6 +6177,9 @@ button.close {
     display: none !important;
   }
 }
+/**
+ * BUI overrides of Bootstrap defaults.
+ */
 @font-face {
   font-family: 'beacon-icons';
   src: url('beacon-icons.eot');

@@ -1,92 +1,88 @@
-@{grid-prefix} {
-  .row.no-gutters {
-    margin-left: 0;
-    margin-right: 0;
-    div[class^="col-"], div[class*=" col-"] {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  // **************************************************
-  // bui 24 col grid generator (fork of bootstrap grid)
-  // **************************************************
-
-  // Container widths
-  //
-  // Set the container width, and override it for fixed navbars in media queries.
-
-  .container {
-    .bui-container-fixed();
-
-    @media (min-width: @screen-sm-min) {
-      width: @container-sm;
-    }
-    @media (min-width: @screen-md-min) {
-      width: @container-md;
-    }
-    @media (min-width: @screen-lg-min) {
-      width: @container-lg;
-    }
-  }
-
-  // Fluid container
-  //
-  // Utilizes the mixin meant for fixed width containers, but without any defined
-  // width for fluid, full width layouts.
-
-  .container-fluid {
-    .bui-container-fixed();
-  }
-
-  // Row
-  //
-  // Rows contain and clear the floats of your columns.
-
-  .row {
-    .bui-make-row();
-  }
-
-  // Columns
-  //
-  // Common styles for small and large grid columns
-
-  .bui-make-grid-columns();
-
-  // Extra small grid
-  //
-  // Columns, offsets, pushes, and pulls for extra small devices like
-  // smartphones.
-
-  .bui-make-grid(xs);
-
-  // Small grid
-  //
-  // Columns, offsets, pushes, and pulls for the small device range, from phones
-  // to tablets.
-
-  @media (min-width: @screen-sm-min) {
-    .bui-make-grid(sm);
-  }
-
-  // Medium grid
-  //
-  // Columns, offsets, pushes, and pulls for the desktop device range.
-
-  @media (min-width: @screen-md-min) {
-    .bui-make-grid(md);
-  }
-
-  // Large grid
-  //
-  // Columns, offsets, pushes, and pulls for the large desktop device range.
-
-  @media (min-width: @screen-lg-min) {
-    .bui-make-grid(lg);
+.row.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+  div[class^="col-"], div[class*=" col-"] {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-// end @{grid-prefix}
+// **************************************************
+// bui 24 col grid generator (fork of bootstrap grid)
+// **************************************************
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  .bui-container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  .bui-container-fixed();
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .bui-make-row();
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.bui-make-grid-columns();
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.bui-make-grid(xs);
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: @screen-sm-min) {
+  .bui-make-grid(sm);
+}
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .bui-make-grid(md);
+}
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .bui-make-grid(lg);
+}
 
 // Grid System Generation
 // !!! Copied from bootstrap/less/mixens.less so that @grid-columns variable can be replaced with @bui-grid-columns & bui prefix can be applied to functions, there by building a second grid system.

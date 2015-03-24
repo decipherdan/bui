@@ -47,7 +47,7 @@ module.exports = function (grunt) {
     },
     watch: {
       demo: {
-        files: ['demo/styles/demo-page-specific.less', 'bui-less/*.less'],
+        files: ['demo/less/demo-page-specific.less', 'bui-less/*.less'],
         tasks: ['less:main', 'less:demo']
       },
       main: {
